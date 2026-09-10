@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #eef2f3;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  background: #ffffff;
+  border: 2px solid #333;
+  display: block;
+  margin: 10px auto;
+}
+#editor {
+  margin-top: 15px;
+  background: #ddd;
+  padding: 10px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+button {
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
