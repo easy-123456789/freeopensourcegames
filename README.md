@@ -3,3 +3,4 @@ A great library of free and open source games. Feel free to contribute!
 
 ## Errors
 I know [Ragdoll Float At script.js](https://github.com/easy-123456789/freeopensourcegames/blob/main/src/ragdoll%20float/script.js) has an error where the left side of the stage where it doesn't reset the game.
+![Ragdoll Float](images/ragdollfloat.png)
