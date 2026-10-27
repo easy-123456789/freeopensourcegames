@@ -411,11 +411,19 @@ function update() {
 
   // Check scoring (when torso passes right edge x=29)
   if (player1.torso.getPosition().x > 29) {
-    player1Score++;
+    player2Score++;
     resetPlayers();
   }
   if (player2.torso.getPosition().x > 29) {
+    player1Score++;
+    resetPlayers();
+  }
+  if (player1.torso.getPosition().x < 0) {
     player2Score++;
+    resetPlayers();
+  }
+  if (player2.torso.getPosition().x < 0) {
+    player1Score++;
     resetPlayers();
   }
 
