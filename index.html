@@ -24,20 +24,30 @@
         padding: 0px;
         background: linear-gradient(#e66465, #9198e5);
       }
+      .hidden {
+        filter: blur(10px)
+      }
     </style>
   </head>
   <body>
-    <div>
-      <a href="src/ragdoll float/index.html" class="gamelink"> Ragdoll Float</a>
+    <div id="ragdollfloat">
+      <a href="src/ragdoll float/index.html" class="gamelink">Ragdoll Float</a>
     
       <p  class="description">A game where you knock each other off the map, with ragdoll physics.</p>
-      <p>Gameplay type: 2 player competitve.</p>
+      <p>Gameplay type: 2-player competitive.</p>
     </div>
-    <div>
+    <div id="retrobowl">
       <a href="src/retrobowl.html" class="gamelink">Retro Bowl</a>
     
       <p  class="description">A Football game where you battle cpus and manage your team.</p>
       <p>Gameplay type: Sports, 1 player.</p>
     </div>
+    <script>
+      const gameCards = document.querySelectorAll("#ragdollfloat, #retrobowl");
+      for (const card of gameCards) {
+        card.addEventListener("mouseover", () => card.classList.remove("hidden"));
+        card.addEventListener("mouseout", () => card.classList.add("hidden"));
+      }
+    </script>
   </body>
 </html>
