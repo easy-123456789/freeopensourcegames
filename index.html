@@ -65,6 +65,20 @@
       for (const card of gameCards) {
         card.addEventListener("mouseover", () => card.classList.remove("hidden"));
         card.addEventListener("mouseout", () => card.classList.add("hidden"));
+        const button = document.createElement("button");
+        button.textContent = "Play Now";
+        button.style.background = "red";
+        button.style.color = "white";
+        button.style.webkitTextFillColor = "white";
+        button.style.font = "20px 'DM Mono', 'Courier New', monospace";
+        button.style.borderRadius = "5px";
+        button.style.cursor = "pointer";
+        
+        button.addEventListener("click", () => {
+          const href = card.querySelector("a").href;
+          document.location = href;
+        });
+        card.appendChild(button);
       }
       document.addEventListener("keydown", (e) => {
         if(e.key === "p"){
