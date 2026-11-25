@@ -43,11 +43,16 @@
       <p>Gameplay type: Sports, 1 player.</p>
     </div>
     <script>
-      const gameCards = document.querySelectorAll("#ragdollfloat, #retrobowl");
+      const gameCards = document.querySelectorAll("div");
       for (const card of gameCards) {
         card.addEventListener("mouseover", () => card.classList.remove("hidden"));
         card.addEventListener("mouseout", () => card.classList.add("hidden"));
       }
+      document.addEventListener("keydown", (e) => {
+        if(e.key === "p"){
+          for(let o of gameCards){ o.classList.add("hidden");}
+        }
+      });
     </script>
   </body>
 </html>
