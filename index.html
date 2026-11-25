@@ -45,9 +45,28 @@
       .hidden {
         filter: blur(10px)
       }
+    @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+      h1 {
+        color: purple;
+        font: 50px 'DM Mono', 'Courier New', monospace;
+
+        
+      }
+      #hacking {
+        animation: blink 300ms infinite;
+      }
     </style>
   </head>
   <body>
+    <h1>Unblocked Games Home</h1>
+    <img src="data:image/png;base64,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" id="hacking"></img>
     <div id="ragdollfloat">
       <a href="src/ragdoll float/index.html" class="gamelink">Ragdoll Float</a>
     
@@ -59,6 +78,12 @@
     
       <p  class="description">A Football game where you battle cpus and manage your team.</p>
       <p>Gameplay type: Sports, 1 player.</p>
+    </div>
+    <div id="eaglerx18">
+      <a href="src/EaglercraftX_1.8_u53_Offline_Signed.html" class="gamelink">EaglerCraftX 1.8 offline u53</a>
+    
+      <p  class="description">A JavaScript runtime of minecraft.</p>
+      <p>Gameplay type: Sandbox, 1 player. Online Modes too.</p>
     </div>
     <script>
       const gameCards = document.querySelectorAll("div");
@@ -73,6 +98,7 @@
         button.style.font = "20px 'DM Mono', 'Courier New', monospace";
         button.style.borderRadius = "5px";
         button.style.cursor = "pointer";
+        button.style.padding = "5px";
         
         button.addEventListener("click", () => {
           const href = card.querySelector("a").href;
